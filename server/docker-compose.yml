@@ -1,0 +1,11 @@
+version: "2.3"
+services:
+  filemonitoerd-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: filemonitoerd-web
+    container_name: filemonitoerd-web
+    restart: always
+    ports:
+      - 8080:80
